@@ -1,0 +1,7 @@
+[2020-8-7 15:23:01] layer "portfolio.jpg": Duplicate path: portfolio.jpg
+[2020-8-7 15:23:01] layer "+ 15,230": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2020-8-7 15:23:01] layer "http___com.ft.imagepublish.upp-prod-us.s3.amazonaws": Unsupported extension: amazonaws
+[2020-8-7 15:23:01] layer "Email : info@winfra.com": Unsupported extension: com
+[2020-8-7 15:23:01] layer "Web : www.winfra.com": Unsupported extension: com
+[2020-8-7 15:23:01] layer "google +": Expected end of input but "+" found.
+[2020-8-7 15:23:01] layer "google +": Expected end of input but "+" found.

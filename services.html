@@ -1,0 +1,339 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+    <title>Winfra</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .inside_links a {
+            color: lightslategray;
+        }
+
+        .inside_links a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .sshide {
+            display: none;
+        }
+
+        .carousel {
+            background: unset;
+        }
+
+        .carousel-cell {
+            width: 33%;
+            height: 210px;
+            margin-right: 10px;
+            background-color: #fff;
+            color: black;
+            margin: 10px;
+            padding: 0px;
+            font-size: 11px;
+            border-radius: 5px;
+            counter-increment: gallery-cell;
+
+        }
+
+        .carousel-cell.size-180 {
+            width: 180px;
+        }
+
+        .carousel-cell.size-large {
+            width: 75%;
+        }
+
+        /* cell number */
+        .carousel-cell:before {
+            /* display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+            font-size: 80px;
+            color: white; */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar  sticky-top navbar-expand-lg navbar-light p-2 navbar-fixed-top mb-5" id="navbar">
+        <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" class="nav_logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">ABOUT </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <p class="service_heading text-center">Our Services</p>
+    </div>
+    <div class="container-fluid pb-3 pt-2">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="">
+                            <img src="assets/port_img.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="col-md-7 d-flex align-items-center">
+                        <div class="">
+                            <h3>Heading</h3>
+                            <span class="lead">
+                                In at consequat nisi. Donec tortor dui, vulputate eu consequat id, efficitur nec massa.
+                                Pellentesque enim augue, commodo gravida massa sit amet, elementum hendrerit felis. Sed
+                                imperdiet efficitur ipsum sit amet maximus. Donec eu fringilla mi. Vivamus ut auctor
+                                velit. Vestibulum bibendum, ligula et bibendum euismod, odio leo ullamcorper urna, eu
+                                pellentesque velit leo eu velit. Nunc eleifend fringilla tortor, eget accumsan enim
+                                placerat vel. Vivamus lobortis ultrices mauris, eget vehicula nisi porttitor suscipit.
+                                Aliquam id scelerisque dolor. Maecenas eget condimentum mi. Duis iaculis eros orci, et
+                                vulputate quam laoreet aliquam. Nulla eget purus sit amet nunc scelerisque rhoncus. Ut
+                                eu purus ut justo bibendum pretium.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-7 d-flex align-items-center">
+                        <div class="">
+                            <h3>Heading</h3>
+                            <span class="lead">
+                                In at consequat nisi. Donec tortor dui, vulputate eu consequat id, efficitur nec massa.
+                                Pellentesque enim augue, commodo gravida massa sit amet, elementum hendrerit felis. Sed
+                                imperdiet efficitur ipsum sit amet maximus. Donec eu fringilla mi. Vivamus ut auctor
+                                velit. Vestibulum bibendum, ligula et bibendum euismod, odio leo ullamcorper urna, eu
+                                pellentesque velit leo eu velit. Nunc eleifend fringilla tortor, eget accumsan enim
+                                placerat vel. Duis iaculis eros orci, et
+                                vulputate quam laoreet aliquam. Nulla eget vulputate sit amet nunc scelerisque rhoncus.
+                                Ut
+                                eu purus ut justo bibendum pretium.
+                                <br>
+                                Vestibulum venenatis mi congue nibh ultrices, et tempus arcu ultrices. Maecenas a velit
+                                luctus, pharetra est eu, ultrices arcu. Suspendisse at aliquam turpis. Sed at ultrices
+                                risus. Fusce egestas porttitor tellus, eget lacinia lectus molestie et. Nam in posuere
+                                turpis. Etiam cursus enim ut mattis congue. Aliquam consectetur eros pellentesque,
+                                sollicitudin ipsum sit amet, viverra augue.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="">
+                            <img src="assets/portfolio.jpg" alt="" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  featurette mt-5 ml-2 d-flex justify-content-center align-items-center pb-5">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-7 mt-2">
+                        <img src="assets/industry.jpg" alt="" width="100%" class="imgg">
+                    </div>
+                    <div class="col-md-5 d-flex flex-column justify-content-center">
+                        <h2 class="featurette-heading">IT PLACES<br><span class="text-muted">
+                            </span></h2>
+                        <p class="lead">
+                            contracting is a tough competitive industry."Contractors in the know" work with
+                            Sucession Institute,LLC to improve their bottom lines through value-added services.Through
+                            our
+                            extensive involvement working with the design and construction industry for over thirty
+                            years.
+                            we
+                            understand that construction Contractors' needs are somewhat different from those of other
+                            businesses
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer_sec p-2">
+        <div class="row justify-content-center">
+            <img src="assets/footer-logo.png " alt="winfra">
+        </div>
+        <div class="row justify-content-center text-white mt-3 mb-4">
+            <div class="text-center">
+                <div class="d-flex row">
+                    <div class="col-3 col-md-3">
+                        <div class="logo_border"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="col-3 col-md-3">
+                        <div class="logo_border"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="col-3 col-md-3">
+                        <div class="logo_border"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="col-3 col-md-3">
+                        <div class="logo_border"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-11 text-white">
+                <div class="row m-1">
+                    <div class="col ">
+                        <div>
+                            <b>QUICK LINKS</b>
+                            <div class="inside_links ">
+                                <ul class="list_style">
+                                    <a href="index.html">
+                                        <li>Home</li>
+                                    </a>
+                                    </a>
+                                    <a href="">
+                                        <li>Careers</li>
+                                    </a>
+                                    </a>
+                                    <a href="">
+                                        <li>Testimonials</li>
+                                    </a>
+                                    </a>
+                                    <a href="">
+                                        <li>Client</li>
+                                    </a>
+                                    <a href="contact.html">
+                                        <li>Contact</li>
+                                    </a>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <b>EVENTS</b>
+                        <div class="inside_links ">
+                            <ul class="list_style">
+                                <a href="">
+                                    <li>Corporate Events</li>
+                                </a>
+                                <a href="">
+                                    <li>Social Events</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <b>PROJECTS</b>
+                        <div class="inside_links ">
+                            <ul class="list_style">
+                                <a href="">
+                                    <li>Hospitals</li>
+                                </a>
+                                <a href="">
+                                    <li>Hotels </li>
+                                </a>
+                                <a href="">
+                                    <li>Industrial </li>
+                                </a>
+                                <a href="">
+                                    <li>Malls </li>
+                                </a>
+                                <a href="">
+                                    <li>Residential </li>
+                                </a>
+                                <a href="">
+                                    <li>IT Places </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <b>LABOUR COMPLIANCE</b>
+                        <div class="inside_links ">
+                            <ul class="list_style">
+                                <a href="">
+                                    <li>Labour Welfare</li>
+                                </a>
+                                <a href="">
+                                    <li>Complaince Report </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <b>CONTACT US</b>
+                        <div class="row mb-2 list_style">
+                            <div class="col-2 col-md-2">
+                                <i class="fa fa-map-marker mt-2" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 col-md-10">
+                                <span>256, 1st AVE Manchester<br>
+                                    125, Bangalore Karnataka
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row mb-2 list_style">
+                            <div class="col-2 col-md-2">
+                                <i class="fa fa-phone mt-2" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 col-md-10">
+                                <span>Mobile : +91 434478229 <br>
+                                    Land : 0839-33442322 </span>
+                            </div>
+                        </div>
+                        <div class="row mt-2 list_style">
+                            <div class="col-2 col-md-2">
+                                <i class="fa fa-phone mt-2" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 col-md-10">
+                                <span>Email : xyz@gmauil.com <br>
+                                    Web : www.winfra.com </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>

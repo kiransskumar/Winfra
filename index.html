@@ -1,0 +1,732 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+    <title>Winfra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .sshide {
+            display: none;
+        }
+
+        .carousel {
+            background: unset;
+        }
+
+        .inside_links a {
+            color: lightslategray;
+
+
+        }
+
+        .inside_links a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .carousel-cell {
+            width: 33%;
+            height: 210px;
+            margin-right: 10px;
+            background-color: #fff;
+            color: black;
+            margin: 10px;
+            padding: 0px;
+            font-size: 11px;
+            border-radius: 5px;
+            counter-increment: gallery-cell;
+        }
+
+        .carousel-cell.size-180 {
+            width: 180px;
+        }
+
+        .carousel-cell.size-large {
+            width: 75%;
+        }
+
+        /* cell number */
+        .carousel-cell:before {
+            /* display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px; */
+            /* font-size: 80px; */
+            /* color: white; */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light p-2 navbar-fixed-top" id="navbar">
+        <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" class="nav_logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="banner-area">
+        <div class="top_section">
+        </div>
+    </section>
+    <div class="container-fluid pb-1" style="background-color: lightgray;">
+        <div class="m-1">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="comp_introduction">
+                        <span class="featurette-heading">Welcome to Winfra</span> <br><span class="text-muted">INSPIRING
+                            A
+                            COMPANY TO
+                            TURN A VISION INTO REALITYs
+                        </span>
+                        <p class="mt-3">Winfra Provides innovative solutions reinforced by robust technology and
+                            fully integrated systems.
+                            The wide range of services include Design & Build Turnkey
+                            Projects,Civil,Infrastructure,finishing Works and MEP Services.
+                            <br><br>
+                            With a most effective development approach throughout every project,winfra has demostrated
+                            its ability in diverse aspects of the construction industry such as IT
+                            parks,Commercial,Industrial,Educational,Resdential projects and is now making an entry
+                            infrastructure
+                            projects.
+                            <br>
+                            <b>
+                                <u>Read More</u>
+                            </b>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pt-4 pb-4 pl-4 pr-4">
+                        <img src="assets/w-to-w-2.jpg" alt="" width="100%" class="imgg">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="p-1" style="text-align: right;
+                border-right: 1px solid black;line-height: 1.5rem;">
+                    <span class="years">50 YEAR
+                    </span>
+                    <br>
+                    <span style="color: lightslategrey;">EXPERIENCE WORKING</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-2 mt-5">
+        <div class="col-md-2">
+            <div class="hello_div">
+                <span style="font-size: 34px;color: steelblue;font-weight: 500;">HELLO</span>
+            </div>
+        </div>
+        <div class="col-md-10" style="flex-direction: column;line-height: 2.8rem;padding-top:20px;font-weight: 500;">
+            <span style="color:steelblue;font-size:35px">CHECK OUT <br>OUR SERVICES</span>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a class="Single" target="1"><span style="color:#3785b7 !important;">DEVELOPES</span></a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="Single" target="2"><span style="color:#3785b7 !important;">INDUSTRY</span></a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="Single" target="3"><span style="color:#3785b7 !important;">HOSPITALS</span></a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="Single" target="4"><span style="color:#3785b7 !important;">IT PLACES</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="target" id="div1">
+            <div class="row  featurette mt-3 ml-2 d-flex justify-content-center align-items-center pb-5">
+                <div class="col-md-6">
+                    <h2 class="featurette-heading">INDUSTRY CONSTRUCTION<br><span class="text-muted">
+                        </span></h2>
+                    <p class="lead">contracting is a tough competitive industry."Contractors in the know" work with
+                        Sucession Institute,LLC to improve their bottom lines through value-added services.Through our
+                        extensive involvement working with the design and construction industry for over thirty years.
+                        we
+                        understand that construction Contractors' needs are somewhat different from those of other
+                        businesses</p>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class=""><img src="assets/industry.jpg" alt="" width="100%" class="imgg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="target" id="div2" style="display: none;">
+            <div class="row  featurette mt-3 ml-2 d-flex justify-content-center align-items-center pb-5">
+
+                <div class="col-md-6 mt-2">
+                    <div class=""><img src="assets/industry.jpg" alt="" width="100%" class="imgg"></div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="featurette-heading">INDUSTRY CONSTRUCTION<br><span class="text-muted">
+                        </span></h2>
+                    <p class="lead">contracting is a tough competitive industry."Contractors in the know" work with
+                        Sucession Institute,LLC to improve their bottom lines through value-added services.Through our
+                        extensive involvement working with the design and construction industry for over thirty years.
+                        we
+                        understand that construction Contractors' needs are somewhat different from those of other
+                        businesses</p>
+                </div>
+            </div>
+        </div>
+        <div class="target" id="div3">
+            <div class="row  featurette mt-3 ml-2 d-flex justify-content-center align-items-center pb-5">
+                <div class="col-md-6">
+                    <h2 class="featurette-heading">INDUSTRY CONSTRUCTION<br><span class="text-muted">
+                        </span></h2>
+                    <p class="lead">contracting is a tough competitive industry."Contractors in the know" work with
+                        Sucession Institute,LLC to improve their bottom lines through value-added services.Through our
+                        extensive involvement working with the design and construction industry for over thirty years.
+                        we
+                        understand that construction Contractors' needs are somewhat different from those of other
+                        businesses</p>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class=""><img src="assets/industry.jpg" alt="" width="100%" class="imgg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="bg-ele d-flex" style="background-image: url('assets/Architect-bg.jpg');
+    background-size: cover;height:auto;padding: 40px;align-items: center;" class="row text-center">
+        <div class="col-6 col-md-3">
+            <div class="feature feature-2 boxed boxed--border countercontainer marginzero">
+                <div class="">
+                    <span class="counternumber counter" data-target="160"
+                        style="font-weight: 400;font-size: 45px;">0</span><br>
+                    <span>PROJECTS</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="feature feature-2 boxed boxed--border countercontainer marginzero">
+                <div class="">
+                    <span class="counternumber counter" data-target="200"
+                        style="font-weight: 400;font-size: 45px;">0</span><br>
+                    <span>CLIENTS</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="feature feature-2 boxed boxed--border countercontainer marginzero">
+                <div class="">
+                    <span class="counternumber counter" data-target="300"
+                        style="font-weight: 400;font-size: 45px;">0</span><br>
+                    <span>MEMBERS</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="feature feature-2 boxed boxed--border countercontainer marginzero">
+                <div class="">
+                    <span class="counternumber counter" data-target="180"
+                        style="font-weight: 400;font-size: 45px;">0</span><br>
+                    <span>AWARDS</span>
+                </div>
+            </div>
+        </div>
+        <h3></h3>
+    </div>
+    <section class="services-area p-4" id="services">
+        <div class="row featurette mt-3 ml-3 d-flex justify-content-center align-items-center">
+            <div class="col-md-6">
+                <h2 class="featurette-heading" style="text-align: center;color black;">PORTFOLIO <br><span
+                        class="text-muted">
+            </div>
+        </div>
+        <div class="row p-2 justify-content-center">
+            <div class="col-md-10">
+                <div class="row text-center">
+                    <div class="col-md-2">
+                        <a class="showSingle" target="5"><span>ALL</span></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="showSingle" target="6"><span>CONSTRUCTION</span></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a class="showSingle" target="7"><span>INTERIOR DESIGNING</span></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="showSingle" target="8"><span>RENOVATION</span></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="showSingle" target="9"><span>LANDSCAPE</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="targetDiv" id="div5">
+            <div class="row featurette mt-3 ml-3 d-flex justify-content-center">
+                <div class="col-md-6 ">
+                    <div class="p-2">
+                        <img src="assets/portfolio.jpg" alt="" width="100%" class="imgg">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <div class="text_sectio">
+                            <h2 class="" style="font-size: 18px;">DEBENHAMS OXFORD<br>STREET REMODELLED FACADE<span
+                                    class="text-muted"></span>
+                            </h2>
+                            <p class="leader">
+                                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula
+                                porta
+                                felis
+                                euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+                                dapibus,
+                                tellus ac cursus commodo.</p>
+                            </di v>
+                            <img src="assets/port_img.png" alt="" width="100%" class="imgg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="targetDiv" id="div6" style="display: none;">
+            <div class="row featurette mt-3 ml-3 d-flex justify-content-center">
+                <div class="col-md-6">
+                    <div>
+                        <img src="assets/port_img.png" alt="" width="100%" class="imgg">
+                        <div class="" style="padding: 40px;">
+                            <h2 class="" style="font-size: 18px;"> DEBENHAMS OXFORD<br>STREET REMODELLED FACADE<span
+                                    class="text-muted">
+                                </span></h2>
+                            <p class="leader">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+                                ligula
+                                porta
+                                felis
+                                euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                Fusce
+                                dapibus,
+                                tellus ac cursus commodo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="p-2">
+                        <img src="assets/portfolio.jpg" alt="" width="100%" class="imgg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="targetDiv" id="div7" style="display: none;">
+            <div class="row featurette mt-3 ml-3 d-flex justify-content-center">
+                <div class="col-md-6">
+                    <div>
+                        <div class="" style="padding: 40px;">
+                            <h2 class="" style="font-size: 18px;"> DEBENHAMS OXFORD<br>STREET REMODELLED FACADE<span
+                                    class="text-muted">
+                                </span></h2>
+                            <p class="leader">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+                                ligula
+                                porta
+                                felis porta felis euismod semper. Praesen
+                                euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                Fusce
+                                dapibus,
+                                tellus ac cursus commodo.</p>
+                        </div>
+                        <img src="assets/port_img.png" alt="" width="100%" class="imgg">
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="p-2">
+                        <img src="assets/portfolio.jpg" alt="" width="100%" class="imgg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="targetDiv" id="div8" style="display: none;">
+            <div class="row featurette mt-3 ml-3 d-flex justify-content-center">
+                <div class="col-md-6 ">
+                    <div class="p-2">
+                        <img src="assets/portfolio.jpg" alt="" width="100%" class="imgg">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <img src="assets/port_img.png" alt="" width="100%" class="imgg">
+                        <div class="" style="padding: 40px;">
+                            <h2 class="" style="font-size: 18px;"> DEBENHAMS OXFORD<br>STREET REMODELLED FACADE<span
+                                    class="text-muted">
+                                </span></h2>
+                            <p class="leader">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+                                ligula
+                                porta
+                                felis
+                                euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                Fusce
+                                dapibus,
+                                telluss ac cursus commodo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="targetDiv" id="div9" style="display: none;">
+            <span>LANDSCAPE Details with images</span>
+        </div>
+    </section>
+    <div class="row align-items-center justify-content-center">
+        <div class="col text-center"> <img src="assets/client-logo1.png" alt=""></div>
+        <div class="col text-center"> *<img src="assets/client-logo2.png" alt=""></div>
+        <div class="col text-center"> *<img src="assets/client-logo3.png" alt=""></div>
+        <div class="col text-center"> *<img src="assets/client-logo4.png" alt=""></div>
+        <div class="col text-center"> *<img src="assets/client-logo5.png" alt=""></div>
+    </div>
+    <div id="bg-ele text-center" class="testmonials_sec">
+        <div class="text-center">
+            <span class="testmonials_heading">TESTIMONIALS</span>
+        </div>
+        <div class="row m-2">
+            <div class="col-md-2 justify-content-center align-items-center text-center d-flex">
+                <div class=" justify-content-center align-items-center">
+                    <b>+ 15330 </b> <br>
+                    <span class="text-muted">Happy clients and what they are saying</span>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="wrapper">
+                    <div class="carousel" data-flickity>
+                        <div class="carousel-cell">
+                            <div class="p-3">
+                                <div class="text-center">
+                                    <img src="assets/profile.jpg" alt="" class="rounded"
+                                        style="width: 50px;margin: auto;">
+                                </div>
+                                <span class="test_carousel_boxheading">John Doe</span>
+                                <p class="mt-2"> is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has
+                                    been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    printer took a gallery of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="p-3">
+                                <div class="text-center">
+                                    <img src="assets/profile.jpg" alt="" class="rounded"
+                                        style="width: 50px;margin: auto;">
+                                </div>
+                                <span class="test_carousel_boxheading">John Doe</span>
+                                <p class="mt-2"> is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has
+                                    been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    printer took a gallery of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="p-3">
+                                <div class="text-center">
+                                    <img src="assets/profile.jpg" alt="" class="rounded"
+                                        style="width: 50px;margin: auto;">
+                                </div>
+                                <span class="test_carousel_boxheading">John Doe</span>
+                                <p class="mt-2"> is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has
+                                    been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div style="">
+                                <div class="p-3">
+                                    <div class="text-center">
+                                        <img src="assets/profile.jpg" alt="" class="rounded"
+                                            style="width: 50px;margin: auto;">
+                                    </div>
+                                    <span class="test_carousel_boxheading">John Doe</span>
+                                    <p> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                        been the industry's standard dummy text ever since the 1500s, when an unknown
+                                        printer took a gallery of type and scrambled it to make a type specimen book.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer_sec p-2">
+        <div class="row justify-content-center">
+            <img src="assets/footer-logo.png " alt="winfra">
+        </div>
+        <div class="row justify-content-center text-white mt-3 mb-4">
+            <div class="text-center">
+                <div class="d-flex row ">
+                    <div class="col-3 col-md-3">
+                        <div class="logo_border"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="col-3 col-md-3">
+                        <div class="logo_border"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="col-3 col-md-3">
+                        <div class="logo_border"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="col-3 col-md-3">
+                        <div class="logo_border"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-11 text-white">
+                <div class="row m-1">
+                    <div class="col ">
+                        <b>QUICK LINKS</b>
+                        <div class="inside_links ">
+                            <ul class="list_style">
+                                <a href="index.html">
+                                    <li>Home</li>
+                                </a>
+                                </a>
+                                <a href="">
+                                    <li>Careers</li>
+                                </a>
+                                </a>
+                                <a href="">
+                                    <li>Testimonials</li>
+                                </a>
+                                </a>
+                                <a href="">
+                                    <li>Client</li>
+                                </a>
+                                <a href="contact.html">
+                                    <li>Contact</li>
+                                </a>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <b>EVENTS</b>
+                            <div class="inside_links ">
+                                <ul class="list_style">
+                                    <a href="">
+                                        <li>Corporate Events</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Social Events</li>
+                                    </a>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <b>PROJECTS</b>
+                            <div class="inside_links ">
+                                <ul class="list_style">
+                                    <a href="">
+                                        <li>Hospitals</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Hotels </li>
+                                    </a>
+                                    <a href="">
+                                        <li>Industrial</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Malls</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Residential</li>
+                                    </a>
+                                    <a href="">
+                                        <li>IT Places</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <b>LABOUR COMPLIANCE</b>
+                            <div class="inside_links ">
+                                <ul class="list_style">
+                                    <a href="">
+                                        <li>Labour Welfare</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Complaince Report </li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <b>CONTACT US</b>
+                            <div class="row mb-2 list_style">
+                                <div class="col-2 col-md-2">
+                                    <i class="fa fa-map-marker mt-2" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-10 col-md-10">
+                                    <span>256, 1st AVE Manchester<br>
+                                        125, Bangalore Karnataka
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row mb-2 list_style">
+                                <div class="col-2 col-md-2">
+                                    <i class="fa fa-phone mt-2" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-10 col-md-10">
+                                    <span>Mobile : +91 434478229 <br>
+                                        Land : 0839-33442322 </span>
+                                </div>
+                            </div>
+                            <div class="row mt-2 list_style">
+                                <div class="col-2 col-md-2">
+                                    <i class="fa fa-phone mt-2" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-10 col-md-10">
+                                    <span>Email : xyz@gmauil.com <br>
+                                        Web : www.winfra.com </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(window).on('scroll', function () {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test = 750;             // set to whatever you want it to be
+            if (y_scroll_pos > scroll_pos_test) {
+                //do stuff
+                const counters = document.querySelectorAll('.counter');
+                const speed = 50; // The lower the slower
+
+                counters.forEach(counter => {
+
+                    const updateCount = () => {
+
+                        const target = +counter.getAttribute('data-target');
+
+                        const count = +counter.innerText;
+
+                        console.log(target);
+
+                        // Lower inc to slow and higher to slow
+
+                        const inc = target / speed;
+
+                        console.log(inc);
+
+                        console.log(count);
+
+                        // Check if target is reached
+
+                        if (count < target) {
+
+                            // Add inc to count and output in counter
+
+                            counter.innerText = count + inc;
+
+                            // Call function every ms
+
+                            setTimeout(updateCount, 100);
+
+                        } else {
+
+                            counter.innerText = target;
+
+                        }
+
+                    };
+
+                    updateCount();
+
+                });
+
+            }
+
+        });
+    </script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <script src="js/flickity.min.js"></script>
+    <!-- <script type="text/javascript">
+        jQuery(function () {
+            jQuery('.Single').click(function () {
+                jQuery('.target').hide();
+                jQuery('#div' + $(this).attr('target')).show();
+            });
+        });
+    </script> -->
+    <script>
+        jQuery(function () {
+            jQuery('.showSingle').click(function () {
+                jQuery('.targetDiv').hide();
+                jQuery('#div' + $(this).attr('target')).show();
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

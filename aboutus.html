@@ -1,0 +1,358 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+    <title>Winfra</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .inside_links a {
+            color: lightslategray;
+        }
+
+        .inside_links a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .sshide {
+            display: none;
+        }
+
+        .carousel {
+            background: unset;
+        }
+
+        .carousel-cell {
+            width: 33%;
+            height: 210px;
+            margin-right: 10px;
+            background-color: #fff;
+            color: black;
+            margin: 10px;
+            padding: 0px;
+            font-size: 11px;
+            border-radius: 5px;
+            counter-increment: gallery-cell;
+        }
+
+        .carousel-cell.size-180 {
+            width: 180px;
+        }
+
+        .carousel-cell.size-large {
+            width: 75%;
+        }
+
+        /* cell number */
+        .carousel-cell:before {
+            /* display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px; */
+            /* font-size: 80px; */
+            /* color: white; */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light p-2 navbar-fixed-top" id="navbar">
+        <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" class="nav_logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="about_section" style="">
+    </div>
+    <div class="main_body p-3">
+        <section class="switchable feature-large feattwo">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="col-md-6">
+                        <img src="assets/w-to-w-2.jpg" alt="" width="100%" class="imgg">
+                    </div>
+                    <div class="col-md-6 col-lg-5 align-items-center d-flex">
+                        <div class="switchable__text">
+                            <h2 class="athead">ABOUT WINFRA</h2>
+                            <p>Winfra Provides innovative solutions reinforced by robust technology and
+                                fully integrated systems.
+                                The wide range of services include Design & Build Turnkey
+                                Projects,Civil,Infrastructure,finishing Works and MEP Services.</p>
+                            <p> With a most effective development approach throughout every project,winfra has
+                                demostrated
+                                its ability in diverse aspects of the construction industry such as IT
+                                parks,Commercial,Industrial,Educational,Resdential projects and is now making an entry
+                                infrastructure
+                                projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="bg-ele d-flex" style="background-image: url('assets/Architect-bg.jpg');
+            background-size: cover;height:auto;padding: 40px;align-items: center;" class="row text-center">
+                <div class="col-6 col-md-3">
+                    <div class="feature feature-2 boxed boxed--border countercontainer marginzero">
+                        <div class="">
+                            <span class="counternumber counter" data-target="160"
+                                style="font-weight: 400;font-size: 45px;">0</span><br>
+                            <span>PROJECTS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature feature-2 boxed boxed--border countercontainer marginzero">
+                        <div class="">
+                            <span class="counternumber counter" data-target="200"
+                                style="font-weight: 400;font-size: 45px;">0</span><br>
+                            <span>CLIENTS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature feature-2 boxed boxed--border countercontainer marginzero">
+                        <div class="">
+                            <span class="counternumber counter" data-target="300"
+                                style="font-weight: 400;font-size: 45px;">0</span><br>
+                            <span>MEMBERS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature feature-2 boxed boxed--border countercontainer marginzero">
+                        <div class="">
+                            <span class="counternumber counter" data-target="180"
+                                style="font-weight: 400;font-size: 45px;">0</span><br>
+                            <span>AWARDS</span>
+                        </div>
+                    </div>
+                </div>
+                <h3></h3>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid footer_sec p-2">
+        <div class="row justify-content-center">
+            <img src="assets/footer-logo.png " alt="winfra">
+        </div>
+        <div class="row justify-content-center text-white mt-3 mb-4">
+            <div class="text-center">
+                <div class="d-flex row ">
+                    <div class="col-3 col-md-3">
+                        <div class="logo_border"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="col-3 col-md-3">
+                        <div class="logo_border"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="col-3 col-md-3">
+                        <div class="logo_border"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="col-3 col-md-3">
+                        <div class="logo_border"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-11 text-white">
+                <div class="row m-1">
+                    <div class="col ">
+                        <div>
+                            <b>QUICK LINKS</b>
+                            <div class="inside_links ">
+                                <ul class="list_style">
+                                    <a href="index.html">
+                                        <li>Home</li>
+                                    </a>
+                                    </a>
+                                    <a href="">
+                                        <li>Careers</li>
+                                    </a>
+                                    </a>
+                                    <a href="">
+                                        <li>Testimonials</li>
+                                    </a>
+                                    </a>
+                                    <a href="">
+                                        <li>Client</li>
+                                    </a>
+                                    <a href="contact.html">
+                                        <li>Contact</li>
+                                    </a>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <b>EVENTS</b>
+                        <div class="inside_links ">
+                            <ul class="list_style">
+                                <a href="">
+                                    <li>Corporate Events</li>
+                                </a>
+                                <a href="">
+                                    <li>Social Events</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <b>PROJECTS</b>
+                            <div class="inside_links ">
+                                <ul class="list_style">
+                                    <a href="">
+                                        <li>Hospitals</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Hotels </li>
+                                    </a>
+                                    <a href="">
+                                        <li>Industrial </li>
+                                    </a>
+                                    <a href="">
+                                        <li>Malls </li>
+                                    </a>
+                                    <a href="">
+                                        <li>Residential </li>
+                                    </a>
+                                    <a href="">
+                                        <li>IT Places </li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <b>LABOUR COMPLIANCE</b>
+                            <div class="inside_links ">
+                                <ul class="list_style">
+                                    <a href="">
+                                        <li>Labour Welfare</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Complaince Report </li>
+                                    </a>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <b>CONTACT US</b>
+
+                            <div class="row mb-2 list_style">
+                                <div class="col-2 col-md-2">
+                                    <i class="fa fa-map-marker mt-2" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-10 col-md-10">
+                                    <span>256, 1st AVE Manchester<br>
+                                        125, Bangalore Karnataka
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row mb-2 list_style">
+                                <div class="col-2 col-md-2">
+                                    <i class="fa fa-phone mt-2" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-10 col-md-10">
+                                    <span>Mobile : +91 434478229 <br>
+                                        Land : 0839-33442322 </span>
+                                </div>
+                            </div>
+                            <div class="row mt-2 list_style">
+                                <div class="col-2 col-md-2">
+                                    <i class="fa fa-phone mt-2" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-10 col-md-10">
+                                    <span>Email : xyz@gmail.com <br>
+                                        Web : www.winfra.com </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(window).on('scroll', function () {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test = 750;             // set to whatever you want it to be
+            if (y_scroll_pos > scroll_pos_test) {
+                //do stuff
+                const counters = document.querySelectorAll('.counter');
+                const speed = 50; // The lower the slower
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        console.log(target);
+                        // Lower inc to slow and higher to slow
+                        const inc = target / speed;
+                        console.log(inc);
+                        console.log(count);
+                        // Check if target is reached
+                        if (count < target) {
+                            // Add inc to count and output in counter
+                            counter.innerText = count + inc;
+                            // Call function every ms
+                            setTimeout(updateCount, 100);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+            }
+        });
+    </script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
